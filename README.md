@@ -9,7 +9,7 @@
 
 * Monitor VA Panel 144Hz
 * Wacom Tablet CTL-672
-* Keyboard HyperX Alloy Origin Red
+* Keyboard HyperX Alloy Origins Red
 
 ## Skins
 
