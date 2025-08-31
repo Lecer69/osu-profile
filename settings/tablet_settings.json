@@ -9,6 +9,30 @@
       },
       "Filters": [
         {
+          "Path": "VoiDPlugins.Filter.Reconstructor",
+          "Settings": [
+            {
+              "Property": "EMAWeight",
+              "Value": 0.8
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Hawku.Smoothing",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 2.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
           "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_RAW",
           "Settings": [
             {
@@ -54,8 +78,8 @@
         "Tablet": {
           "Width": 42.0,
           "Height": 23.625,
-          "X": 79.0,
-          "Y": 44.0,
+          "X": 109.5801,
+          "Y": 42.50829,
           "Rotation": 0.0
         },
         "EnableClipping": true,
