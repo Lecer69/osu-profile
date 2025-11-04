@@ -1,4 +1,5 @@
 {
+  "Revision": "0.6.6.2",
   "Profiles": [
     {
       "Tablet": "Wacom CTL-672",
@@ -40,7 +41,7 @@
               "Value": 6.0
             }
           ],
-          "Enable": true
+          "Enable": false
         },
         {
           "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_SMOOTH",
@@ -50,7 +51,7 @@
               "Value": 3.0
             }
           ],
-          "Enable": true
+          "Enable": false
         },
         {
           "Path": "OpenTabletDriver.Plugin.NoiseReduction",
@@ -62,6 +63,92 @@
             {
               "Property": "DistanceThreshold",
               "Value": 0.28
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingTabletSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 0.375
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.153
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.153
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 0.474
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.306
+            }
+          ],
+          "Enable": true
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingScreenSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 5.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.95
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 1.0
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TemporalResampler",
+          "Settings": [
+            {
+              "Property": "followRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "latency",
+              "Value": 0.0
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 1.0
+            },
+            {
+              "Property": "extraFrames",
+              "Value": true
+            },
+            {
+              "Property": "loggingEnabled",
+              "Value": false
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            },
+            {
+              "Property": "frameShift",
+              "Value": 0.0
             }
           ],
           "Enable": true
@@ -104,7 +191,9 @@
         "AuxButtons": [],
         "MouseButtons": [],
         "MouseScrollUp": null,
-        "MouseScrollDown": null
+        "MouseScrollDown": null,
+        "DisablePressure": false,
+        "DisableTilt": false
       }
     }
   ],
